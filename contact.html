@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@500&family=Kanit:wght@300&family=Oswald:wght@300&family=Roboto:wght@300&family=Teko&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/57d1bd7803.js" crossorigin="anonymous">
+  </script>
+  <title> Kapcsolat | Írj nekünk!</title>
+  <meta name="description" content="Fedezd fel velünk a endurókat, crossmotorokat. Kísérj el bennünket kalandjainkon és találd meg a tökéletes terep motor élményt!">
+
+</head>
+
+<body>
+  <header>
+    <h1>Mi vagyunk a Pár a Pályán</h1>
+    <p>Testing motorbikes and sharing our adventures on YouTube</p>
+  </header>
+
+  <!-- Fixed navigation bar -->
+  <ul class="menu cf">
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <li><a href="index.html">Főoldal</a></li>
+    <li>
+      <a href="#">Rólunk</a>
+      <ul class="submenu">
+        <li><a href="about_barbi.html">Barbi</a></li>
+        <li><a href="about_dani.html">Dani</a></li>
+      </ul>
+    </li>
+    <li></li>
+
+    <li>
+      <a href="contact.html">Kapcsolat</a>
+    </li>
+  </ul>
+  </ul>
+  <section class="contact section">
+    <form action="" class="form__container container">
+      <h2 class="title-form__container">Kapcsolat</h2>
+      <p class="text-form__container">Kérdésed támadt? Írj nekünk!</p>
+
+      <div class="form__inputs grid">
+        <div class="boxform">
+          <label for="input" class='label'>Név :</label>
+          <input type="text" class="input">
+        </div>
+        <div class="boxform">
+          <label for="input" class='label'>Telefonszám :</label>
+          <input type="text" class="input">
+        </div>
+      </div>
+      <div class="form__inputs grid">
+        <div class="boxform">
+          <label for="input" class='label'>E-mail :</label>
+          <input type="email" class="input" id="emailform" required>
+        </div>
+        <div class="boxform">
+          <label for="input" class='label'>Téma :</label>
+          <input type="text" class="input">
+        </div>
+      </div>
+
+      <div class="boxform">
+        <label for="input" class='label'>Üzenet :</label>
+        <textarea name="" id="" cols="0" rows="7" class="input"></textarea>
+      </div>
+      <button class="button__form">Küldés</button>
+    </form>
+  </section>
+
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7674.978683835542!2d19.45363207012142!3d47.14777235188508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741846a41ce0b4d%3A0xc0943e0493ff3299!2sEuroring!5e0!3m2!1shu!2sde!4v1703176721564!5m2!1shu!2sde"
+    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+  <footer>
+    <a href="index.html">
+      <img src="img/parapalyan_logo_resize.png" alt="Logo" width="110px" height="110px" />
+    </a>
+
+
+
+    <p>
+      &copy; Copyright © 2023 Pár a Pályán™ Minden jog fenntartva. All rights
+      reserved.
+    </p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var menuLinks = document.querySelector(".menu-links");
+      menuLinks.classList.toggle("show");
+    }
+
+    function openPage(url) {
+      window.location.href = url;
+    }
+
+
+  </script>
+</body>
+
+</html>

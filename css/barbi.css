@@ -1,0 +1,324 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    color: #fff;
+    background: url(../img/barbi_background.jpg)no-repeat center center fixed ;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+  }
+  
+  header {
+    text-align: center;
+    padding: 100px 20px;
+    
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/barbi_background.jpg)
+    ;
+  }
+  
+  h1 {
+    padding-top: 20px;
+    font-size: 90px;
+    font-weight: 600;
+    background-image: conic-gradient(
+      #8e6af1 0%,
+      #8e6af1 22%,
+      #00c2cb 66%,
+      #00c2cb 99%
+    );
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-family: "Bebas Neue", sans-serif;
+    font-family: "Cinzel", serif;
+    font-family: "Kanit", sans-serif;
+    font-family: "Oswald", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: "Teko", sans-serif;
+    
+  }
+  
+  p{
+    color:white;
+  }
+  
+  
+  /* Menu Dropdown */
+  .cf:before,
+  .cf:after {
+    content: " ";
+    display: table;
+    position: sticky;
+  }
+  
+  .cf:after {
+    clear: both;
+  }
+  
+  .cf {
+    zoom: 1;
+  }
+  
+  .menu,
+  .submenu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .menu {
+    margin: 50px auto;
+    width: 800px;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+    opacity: 80%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    cursor: pointer;
+    
+    
+    
+    
+  }
+  
+  .menu-icon {
+    display: none; /* Initially hide on big screens */
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .menu > li {
+    background: #000;
+    float: left;
+    position: relative;
+    transform: skewX(25deg);
+  }
+  
+  .menu a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica;
+    font-size: 14px;
+    position: relative;
+  }
+  
+  .menu li:hover {
+    background: #3ce7e7;
+  }
+  
+  .menu > li > a {
+    transform: skewX(-25deg);
+    padding: 1em 2em;
+  }
+  
+  /* Dropdown */
+  .submenu {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+    transform: skewX(-25deg);
+    transform-origin: left top;
+  }
+  
+  .submenu li {
+    background-color: #553c9a;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .submenu > li > a {
+    padding: 1em 2em;
+  }
+  
+  .submenu > li::after {
+    content: "";
+    position: absolute;
+    top: -125%;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
+  }
+  
+  .submenu > li:nth-child(odd) {
+    transform: skewX(-25deg) translateX(0);
+  }
+  
+  .submenu > li:nth-child(odd) > a {
+    transform: skewX(25deg);
+  }
+  
+  .submenu > li:nth-child(odd)::after {
+    right: -50%;
+    transform: skewX(-25deg) rotate(3deg);
+  }
+  
+  .submenu > li:nth-child(even) {
+    transform: skewX(25deg) translateX(0);
+  }
+  
+  .submenu > li:nth-child(even) > a {
+    transform: skewX(-25deg);
+  }
+  
+  .submenu > li:nth-child(even)::after {
+    left: -50%;
+    transform: skewX(25deg) rotate(3deg);
+  }
+  
+  /* Show dropdown */
+  .submenu,
+  .submenu li {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .submenu li {
+    transition: 0.2s ease transform;
+  }
+  
+  .menu > li:hover .submenu,
+  .menu > li:hover .submenu li {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .menu > li:hover .submenu li:nth-child(even) {
+    transform: skewX(25deg) translateX(15px);
+  }
+  
+  .menu > li:hover .submenu li:nth-child(odd) {
+    transform: skewX(-25deg) translateX(-15px);
+  }
+  
+  section {
+    padding: 20px;
+    position: relative;
+   z-index: 1;  
+  }
+  
+  .about-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: justify;
+    border-radius: 3px;
+    max
+    
+   
+  }
+
+.about-container h2{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 100px;
+    font-family: "Bebas Neue", sans-serif;
+    font-family: "Cinzel", serif;
+    font-family: "Kanit", sans-serif;
+    font-family: "Oswald", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: "Teko", sans-serif;
+    -webkit-text-stroke: 1px #553c9a;
+}
+  
+.about-container p{
+    color:#553c9a;
+    font-size: 20px;
+    
+}
+
+.slider-container {
+    position: relative;
+    width: 60%; /* Adjust the width as needed */
+    max-width: 500px; /* Adjust the maximum width as needed */
+    margin: 20px auto;
+    overflow: hidden;
+    max-height: 800px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.slider img:hover {
+    transform: scale(1.1); /* Make the image slightly bigger on hover */
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    opacity: 96%;
+  }
+  
+  .social-icons {
+    margin-bottom: 15px;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    
+  }
+  
+  .social-icons a:hover{
+    color: #8e6af1;
+  }
+  
+  
+  @media screen and (max-width: 767px) {
+    /* Hide the regular menu on smaller screens */
+    .menu {
+      display: none;
+    }
+  
+    /* Show the hamburger menu on smaller screens */
+    .menu-icon {
+      display: block;
+    }
+  }
